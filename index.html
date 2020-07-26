@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div id="homepage">
+        <h1>Rock/Paper/Scissors</h1>
+        <p>enter name:</p>
+        <input type="text" spellcheck="false" id="input-name">
+        <br>
+        <button id="homepage-btn">Play</button>
+    </div>
+    
+    <script>
+        document.getElementById('homepage-btn').addEventListener('click',()=>{
+            sessionStorage.setItem("playerName", document.getElementById('input-name').value);
+
+            onclick=window.location.href='main.html'
+        })
+        document.addEventListener('keypress', (e)=> {
+            if (e.key === 'Enter') {
+                sessionStorage.setItem("playerName", document.getElementById('input-name').value);
+
+                onclick=window.location.href='main.html'
+            }    
+        })
+    </script>
+</body>
+</html>

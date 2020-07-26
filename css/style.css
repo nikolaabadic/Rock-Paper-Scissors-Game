@@ -1,0 +1,87 @@
+body{
+    text-align: center;
+    background-color: #313335;
+}
+#homepage{
+    display: inline-block;
+    margin: 200px auto;
+}
+    #homepage h1,p{
+        font-family: 'Press Start 2P', cursive;
+        color: #c0ff02;
+        margin-bottom: 30px;
+    }
+    #homepage input{
+        border: 1px solid white;
+        margin-bottom: 20px;
+        background-color: transparent;
+        height: 30px;
+        font-family: 'Press Start 2P', cursive;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    #homepage-btn{
+        height: 50px;
+        width: 100px;
+        margin: 10px auto;
+        font-family: 'Press Start 2P', cursive;
+        border-radius: 10%;
+        background-color: #c0ff02;
+        color: #313335;
+        border: none;        
+    }
+    #homepage-btn:hover, #main-btn-rock:hover,  #main-btn-paper:hover, #main-btn-scissors:hover, #main-btn-restart:hover{
+            transform: scale(1.15,1.15);
+            transition-duration: 0.2s;
+    }
+    #homepage-btn:focus, #main-btn-rock:focus,#main-btn-paper:focus,#main-btn-scissors:focus, #main-btn-restart:focus{
+        outline: none;
+    }
+
+#main-wrapper{
+    margin: 50px auto;
+}
+    #main-wrapper h1{
+        font-family: 'Press Start 2P', cursive;
+        color: #c0ff02;
+        margin-bottom: 40px;
+    }        
+#row{
+    padding: 0px 80px;
+    display: flex;
+    margin: 0 100px;
+}
+    #computer{
+        flex: 50%;
+    }
+    #player{
+        flex: 50%;
+    }
+
+#main-btn-rock,#main-btn-paper,#main-btn-scissors,#main-btn-restart{
+    height: 40px;
+    width: 180px;
+    margin: 10px 10px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #c0ff02;
+    border-radius: 5%;
+    color: #313335;
+    border: none; 
+}
+#score-l, #score-r{
+    font-size: 60px;
+}
+#name-l, #name-r{
+    font-size: 20px;
+}
+#img-close{
+    height:40px;
+    width: auto;
+    position: fixed;
+    top: 15px;
+    right:15px;
+}
+.result{
+    color: #b53737
+}
